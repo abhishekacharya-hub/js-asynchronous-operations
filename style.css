@@ -2,3 +2,14 @@
     margin: 0;
     padding: 0;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: medium;
+    font-weight: 100;
+}
+
