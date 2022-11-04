@@ -76,4 +76,23 @@ xhr.onreadystatechange = function () {
 xhr.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true); // this makes asynchronous true or false
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 xhr.send();
-  
+
+const xhr = new XMLHttpRequest();
+
+xhr.onreadystatechange = function () {
+  if (this.readyState === 4 && this.status === 200) {
+    console.log(this.responseText);
+  }
+};
+
+//feteh
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+  })
+  .catch(function (err) {
+    console.log("Something went wrong!", err);
+  });
