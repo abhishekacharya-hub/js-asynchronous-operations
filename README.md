@@ -36,5 +36,23 @@ const promise = new Promise((resolve, reject) => {
     return result + 30;
   });
 
+```
+
+__Promise.all()__ :
+
+
+```javascript
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 10, "rirst");
+});
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 20, "second");
+});
+
+Promise.all([promise1, promise2])
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => console.log(`Error in promise $[error]`));
 
 ```
