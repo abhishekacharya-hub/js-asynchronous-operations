@@ -77,13 +77,6 @@ xhr.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true); // this m
 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 xhr.send();
 
-const xhr = new XMLHttpRequest();
-
-xhr.onreadystatechange = function () {
-  if (this.readyState === 4 && this.status === 200) {
-    console.log(this.responseText);
-  }
-};
 
 //feteh
 fetch("https://jsonplaceholder.typicode.com/todos/1")
