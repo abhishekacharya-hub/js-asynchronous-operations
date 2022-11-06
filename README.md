@@ -95,6 +95,10 @@ __cons__ :
 
 __async and await__ :
 
+The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
+
+Async keyword is used along with the function declaration which specifies that this function is now able to accept all types of asynchronous events on itself. Await basically waits for the results which are particularly to be fetched from the source from which that async function is about to fetch the data.
+
 ```javascript
 async function fetchMethod() {
   try {
@@ -106,4 +110,23 @@ async function fetchMethod() {
   }
 }
 fetchMethod();
+```
+
+__XMLHttpRequest__
+
+XMLHttpRequest() is a built-in browser object that allows to make HTTP requests in JavaScript. XMLHttpRequest has two modes of operation: synchronous and asynchronous.
+
+```javascript
+const xhr = new XMLHttpRequest();
+
+xhr.onreadystatechange = function () {
+  if (this.readyState === 4 && this.status === 200) {
+    console.log(this.responseText);
+  }
+};
+
+xhr.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true); // this makes asynchronous true or false
+xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+xhr.send();
+
 ```
