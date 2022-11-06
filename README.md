@@ -130,3 +130,23 @@ xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 xhr.send();
 
 ```
+
+__fetch()__ :
+
+fetch allows to make network requests similar to XMLHttpRequest. Fetch makes it easier to make asynchronous requests and handle responses better than with the older XMLHttpRequest. It is an improvement over the XMLHttpRequest API. The main difference between Fetch() and XMLHttpRequest() is that the Fetch API uses Promises, hence avoiding callback hell.
+
+```javascript
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+  })
+  .catch(function (err) {
+    console.log("Something went wrong!", err);
+  });
+
+
+```
+
