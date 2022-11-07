@@ -175,3 +175,9 @@ The defer attribute tells the browser not to wait for the script. Instead, the b
 Like an asynchronously loaded script, the file can be downloaded while the HTML document is still parsing. However, even if the file is fully downloaded long before the document is finished parsing, the script is not executed until the parsing is complete.
 
 
+__What is the difference between Promise and AJAX?__
+
+A Promise is an interface for asynchronous operations. They keep track of when asynchronous operations complete and what their results are and let you coordinate that completion and those results (including error conditions) with other code or other asynchronous operations. They aren't actually asynchronous operations in themselves.
+
+An Ajax call is a specific asynchronous operation that can be used with with a traditional callback interface or wrapped in a promise interface. We can make an Ajax call either with a traditional callback using the XMLHttpRequest() interface or we can make an Ajax call (in modern browsers), using a promise with the fetch() interface.
+
