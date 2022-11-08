@@ -181,3 +181,8 @@ A Promise is an interface for asynchronous operations. They keep track of when a
 
 An Ajax call is a specific asynchronous operation that can be used with with a traditional callback interface or wrapped in a promise interface. We can make an Ajax call either with a traditional callback using the XMLHttpRequest() interface or we can make an Ajax call (in modern browsers), using a promise with the fetch() interface.
 
+__Explain ajax request in javascript?__
+
+Ajax stands for Asynchronous Javascript And Xml. It load data from the server and selectively updating parts of a web page without reloading the whole page.
+
+Basically, Ajax uses browser's built-in XMLHttpRequest() object to send and receive information to and from a web server asynchronously, in the background, without blocking the page or interfering with the user's experience.
