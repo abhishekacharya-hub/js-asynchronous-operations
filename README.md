@@ -186,3 +186,22 @@ __Explain ajax request in javascript?__
 Ajax stands for Asynchronous Javascript And Xml. It load data from the server and selectively updating parts of a web page without reloading the whole page.
 
 Basically, Ajax uses browser's built-in XMLHttpRequest() object to send and receive information to and from a web server asynchronously, in the background, without blocking the page or interfering with the user's experience.
+
+
+__What is XMLHTTPRequest Object?__
+
+The XMLHTTPRequest() object is an API which is used for fetching data from the server. An object of XMLHTTPRequest is used for asynchronous communication between client and server. It retrieve any type of data such as json, xml, text etc.
+
+new XMLHttpRequest()	    Creates a new XMLHttpRequest object
+abort()	                  Cancels the current request
+getAllResponseHeaders()	  Returns header information
+getResponseHeader()	      Returns specific header information
+open(method,url,async,user,psw)	      Specifies the request
+                                      method:   the request type GET or POST
+                                      url:      the file location
+                                      async:    true (asynchronous) or false (synchronous)
+                                      user:     optional user name
+                                      psw:      optional password
+send()	                  Sends the request to the server Used for GET requests
+send(string)	            Sends the request to the server. Used for POST requests
+setRequestHeader()	      Adds a label/value pair to the header to be sent
