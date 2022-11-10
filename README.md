@@ -3,8 +3,9 @@ in this repo you can find all short of asynchronous operations in javascript
 
 # Table of Contents
 
-1. [Promise](#promise)
-2. [Promise chaining](#promise-chaining)
+1. [Promise](#Promise)
+2. [Promise chaining](#Promise-chaining)
+3. [Promise.all()](#Promise.all())
 
 
 __Promise__ :
