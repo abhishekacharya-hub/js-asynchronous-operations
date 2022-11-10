@@ -1,6 +1,13 @@
 in this repo you can find all short of asynchronous operations in javascript 
 
 
+__table of content__
+
+* [promise]
+* [promisechaining]
+
+
+
 __Promise__ :
 
 promise is deal with asychronous operations and it is an alternate of callback and it provides better approach then callback by reducing the callback hell. and writing cleaner code.
