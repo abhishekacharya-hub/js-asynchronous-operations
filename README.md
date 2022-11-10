@@ -3,10 +3,11 @@ in this repo you can find all short of asynchronous operations in javascript
 
 # Table of Contents
 
-1. [Promise](#Promise)
-2. [Promise chaining](#Promise-chaining)
-3. [Promise.all()](#Promise.all())
+1. [Promise](#-1-Promise)
+2. [Promise chaining](#-2-Promise-chaining)
+3. [Promise.all()](#-3-Promise.all())
 
+## # 1. Promise
 
 ## Promise :
 
@@ -26,7 +27,7 @@ const promise = new Promise((resolve,reject) => {
 });
 ```
 
-## Promise chaining :
+## # 2. Promise chaining :
 
 The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining. It allows you to chain on another then call which will run when the second promise is fulfilled. The .catch() can still be called to handle any errors that might occur along the way.
 
@@ -45,7 +46,7 @@ const promise = new Promise((resolve, reject) => {
 
 ```
 
-## Promise.all() :
+## # 3.Promise.all() :
 
 Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved when all the promises get resolved or any one of them gets rejected.
 
